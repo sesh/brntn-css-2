@@ -1,0 +1,160 @@
+/*
+TODO:
+- <code> and <pre>
+- <input> borders
+*/
+
+
+/**
+  Type:
+    - monospace font stack from Github
+    - dark grey from open-color 
+    - #fix-resize: don't resize on device orientation change
+    - 14px / 1.55 line height
+    - #fix-h1: Chrome, Firefox, and Safari have small headings inside <section>, from normalize.css
+*/
+
+
+html {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #212529;
+  -ms-text-size-adjust: 100%; /* #fix-resize */
+  -webkit-text-size-adjust: 100%; /* #fix-resize */
+}
+
+h1 {
+  font-size: 2em;  /* #fix-h1 */
+  margin: 0.67em 0;
+}
+
+mark {
+  background-color: #ffec99;
+}
+
+b, strong { font-weight: bold; }
+
+/*
+Images:
+  - max-width 100%
+  - #fix-border: remove border from images inside <a> on old IE
+*/
+img {
+  max-width: 100%;
+  border: 0; /* #fix-image-border */
+}
+
+/*
+Links:
+  - Nicer default link, hover and visited colors from open-color
+  - #fix-links-ie: remove transparent background in IE 10
+  - make links bold
+  - remove underline, because I'm a monster
+*/
+
+a {
+  color: #1c7ed6;
+  background-color: transparent;  /* #fix-links-ie */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #339af0;
+}
+
+a:visited {
+  color: #ae3ec9;
+}
+
+/*
+Layout:
+  - remove all margins from <body>
+  - .container sets max width to 90% and centers content
+  - blockquote gets a left border
+*/
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 2% 5%;
+}
+
+blockquote {
+  border-left: 6px solid #e9ecef;
+  margin-left: 0;
+  padding: 0 0 0 2em;
+}
+
+/* 
+Tables:
+  - rather simple styling for semantic tables
+  - no caption or footer support
+*/
+
+table { border-collapse: collapse; width: 100%; }
+table th, table td { padding: 8px 4px; }
+thead tr { border-bottom: 2px solid #212529; }
+thead tr th { text-align: left; }
+tbody tr { border-bottom: 1px solid #adb5bd; }
+
+/*
+Forms:
+  - fixes from normalize (marked with #n)
+  - fieldset padding consistent across browsers, from normalize.css
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* #n */
+  margin: 0; /* #n */
+  font-size: 0.95em;
+  line-height: 1.2;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  border-color: #e9ecef;
+}
+
+label {
+  display: block;
+}
+
+input[type=button], input[type=submit], input[type=reset],
+button {
+  color: #e9ecef;
+  padding: 0.6em 0.8em;
+  background-color: #1c7ed6;
+  border: 0.0725em solid #1c7ed6;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover,
+button:hover {
+  background-color: #339af0;
+  border-color: #339af0;
+  cursor: pointer;
+}
+
+input[type=submit]:disabled, button:disabled {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+  cursor: auto;
+}
+
+/* 
+Helpers:
+  - .list-bare to remove icon and padding
+*/
+
+.list--bare {
+  list-style: none;
+  padding-left: 0;
+}
