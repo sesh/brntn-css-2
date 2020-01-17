@@ -117,6 +117,8 @@ textarea {
   margin: 0; /* #n */
   font-size: 0.95em;
   line-height: 1.2;
+  -webkit-appearance: none;
+  border-radius: 2px;
 }
 
 fieldset {
