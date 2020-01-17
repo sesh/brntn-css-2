@@ -117,8 +117,6 @@ textarea {
   margin: 0; /* #n */
   font-size: 0.95em;
   line-height: 1.2;
-  -webkit-appearance: none;
-  border-radius: 2px;
 }
 
 fieldset {
@@ -136,6 +134,8 @@ button {
   padding: 0.6em 0.8em;
   background-color: #1c7ed6;
   border: 0.0725em solid #1c7ed6;
+  -webkit-appearance: none;
+  border-radius: 2px;
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover,
