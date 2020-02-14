@@ -17,7 +17,7 @@ TODO:
 
 html {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
   color: #212529;
   -ms-text-size-adjust: 100%; /* #fix-resize */
@@ -115,7 +115,6 @@ select,
 textarea {
   font-family: inherit; /* #n */
   margin: 0; /* #n */
-  font-size: 0.95em;
   line-height: 1.2;
 }
 
