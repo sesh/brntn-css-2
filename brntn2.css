@@ -8,7 +8,7 @@ TODO:
 /**
   Type:
     - monospace font stack from Github
-    - dark grey from open-color 
+    - dark grey from open-color
     - #fix-resize: don't resize on device orientation change
     - 14px / 1.55 line height
     - #fix-h1: Chrome, Firefox, and Safari have small headings inside <section>, from normalize.css
@@ -90,7 +90,7 @@ blockquote {
   padding: 0 0 0 2em;
 }
 
-/* 
+/*
 Tables:
   - rather simple styling for semantic tables
   - no caption or footer support
@@ -151,7 +151,41 @@ input[type=submit]:disabled, button:disabled {
   cursor: auto;
 }
 
-/* 
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=month],
+input[type=week],
+input[type=datetime],
+input[type=datetime-local],
+input[type=url],
+input[type=tel],
+input[type=email],
+input[type=search],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  padding: 0.6em 0.8em;
+  border: 1px solid #adb5bd;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=number]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border: 1px solid #495057;
+}
+/*
 Helpers:
   - .list-bare to remove icon and padding
 */

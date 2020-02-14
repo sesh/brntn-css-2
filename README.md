@@ -3,5 +3,5 @@
 A simple CSS file for some of my personal projects. Version 2.
 
 ```
-<link rel="stylesheet" href="https://sesh.github.io/brntn-css-2/brntn2.css" />
+<link rel="stylesheet" href="https://cdn.statically.io/gh/sesh/brntn-css-2/master/brntn2.css" />
 ```
