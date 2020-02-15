@@ -16,12 +16,22 @@ TODO:
 
 
 html {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: sans-serif;
   font-size: 16px;
   line-height: 1.55;
   color: #212529;
   -ms-text-size-adjust: 100%; /* #fix-resize */
   -webkit-text-size-adjust: 100%; /* #fix-resize */
+}
+
+code, pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+code {
+  background-color: #e9ecef;
+  font-size: 0.95em;
+  padding: 0.2em;
 }
 
 h1 {
@@ -114,6 +124,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* #n */
+  font-size: inherit;
   margin: 0; /* #n */
   line-height: 1.2;
 }
