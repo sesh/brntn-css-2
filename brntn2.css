@@ -86,18 +86,32 @@ a:visited {
 
 /*
 Layout:
-  - remove all margins from <body>
-  - .container sets max width to 90% and centers content
-  - blockquote gets a left border
+- remove all margins from <body>
+- header, main, footer get max-width and margin
+- blockquote gets a left border
 */
 
 body {
     margin: 0;
 }
 
-.container {
-    max-width: 90%;
-    margin: 2% 5%;
+header, section, footer {
+    max-width: 44em;
+    margin: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.wide {
+    max-width: 88em;
+}
+
+section {
+    margin-bottom: 2em;
 }
 
 blockquote {
@@ -106,6 +120,10 @@ blockquote {
     padding: 0 0 0 2em;
 }
 
+.container {
+    max-width: 90%;
+    margin: 2% 5%;
+}
 
 /*
 Tables:
