@@ -158,6 +158,7 @@ tbody tr {
 Forms:
   - fixes from normalize (marked with #n)
   - fieldset padding consistent across browsers, from normalize.css
+  - simple select styling
 */
 
 button,
@@ -245,6 +246,17 @@ textarea:focus {
     border: 1px solid #495057;
 }
 
+select {
+  background-color: white;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyMTI1MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tZG93biI+PHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+PC9zdmc+");
+  background-position: 96%;
+  background-repeat: no-repeat;
+  border: 1px solid #adb5bd;
+  padding: 11px 40px 11px 0.6em;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  display: block;
+}
 
 /*
   Checkbox / radio:
