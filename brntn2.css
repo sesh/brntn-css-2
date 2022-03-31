@@ -96,8 +96,9 @@ body {
 }
 
 header, section, footer {
-    max-width: 44em;
-    margin: 1em;
+    width: 44em;
+    max-width: 90%;
+    margin: 2% 5%;
 }
 
 header {
